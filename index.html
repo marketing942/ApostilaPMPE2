@@ -85,7 +85,7 @@
           <p class="price__note">Pagamento único. Sem mensalidade, sem renovação.</p>
         </div>
 
-        <button type="button" class="cta" data-open-modal data-cta="hero">
+        <button type="button" class="cta" data-checkout data-cta="hero" id="IPEyzyfmJhKQEYIXAlZH">
           Quero meu resumo agora
           <span class="cta__sub">Acesso liberado em minutos</span>
         </button>
@@ -312,7 +312,7 @@
           <li>Acesso vitalício ao arquivo</li>
         </ul>
 
-        <button type="button" class="cta cta--wide cta--center" data-open-modal data-cta="oferta">
+        <button type="button" class="cta cta--wide cta--center" data-checkout data-cta="oferta">
           Garantir meu resumo por R$ 59,90
           <span class="cta__sub">Ou 12x de R$ 6,12 no cartão</span>
         </button>
@@ -336,7 +336,7 @@
           Todo dia sem estudar é um dia a mais para quem está concorrendo com você.
           Comece hoje, com o material certo, por R$ 59,90.
         </p>
-        <button type="button" class="cta cta--center" data-open-modal data-cta="rodape">
+        <button type="button" class="cta cta--center" data-checkout data-cta="rodape">
           Começar agora por R$ 59,90
           <span class="cta__sub">Acesso imediato · 7 dias de garantia</span>
         </button>
@@ -412,52 +412,7 @@
       <b>R$ 59,90</b>
       <span>ou 12x de R$ 6,12</span>
     </div>
-    <button type="button" class="cta" data-open-modal data-cta="buybar">Comprar agora</button>
-  </div>
-
-  <!-- ===================== MODAL DE COMPRA ===================== -->
-  <div class="modal" id="lead-modal" hidden>
-    <div class="modal__overlay" data-close-modal></div>
-    <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-      <button type="button" class="modal__close" data-close-modal aria-label="Fechar">&times;</button>
-
-      <h2 class="modal__title" id="modal-title">Falta <span class="hl">um passo</span></h2>
-      <p class="modal__sub">Preencha seus dados para liberar o pagamento. É nesse e-mail que o material chega.</p>
-
-      <div class="modal__price">
-        <strong>R$ 59,90</strong> à vista · ou 12x de R$ 6,12
-      </div>
-
-      <!-- ⚠ TRACKING — ver TRACKING.md do projeto pmpe.
-           · id do <form> = "lead-form" e id do <button> = identificador da PixelX.
-           · o campo de telefone precisa de name + class="pxa_mask_phone" para a máscara.
-           Renomear qualquer um destes zera o Lead. -->
-      <form class="form" id="lead-form" novalidate>
-        <div class="field">
-          <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Nome completo" required />
-          <span class="error" data-error-for="nome"></span>
-        </div>
-        <div class="field">
-          <input type="email" id="email" name="email" autocomplete="email" placeholder="Seu melhor e-mail" required />
-          <span class="error" data-error-for="email"></span>
-        </div>
-        <div class="field">
-          <input type="text" id="telefone" name="telefone" class="pxa_mask_phone" inputmode="tel"
-                 autocomplete="tel" placeholder="WhatsApp com DDD" required />
-          <span class="error" data-error-for="telefone"></span>
-        </div>
-
-        <button type="submit" class="cta" id="IPEyzyfmJhKQEYIXAlZH">
-          Ir para o pagamento
-          <span class="cta__sub">Pix, cartão ou boleto</span>
-        </button>
-
-        <p class="note">Seus dados são usados só para a entrega do material.</p>
-        <p class="success" id="form-success" role="status" hidden>
-          ✅ Tudo certo!<br />Abrindo o checkout seguro…
-        </p>
-      </form>
-    </div>
+    <button type="button" class="cta" data-checkout data-cta="buybar">Comprar agora</button>
   </div>
 
   <!-- ===================== EXIT POPUP =====================

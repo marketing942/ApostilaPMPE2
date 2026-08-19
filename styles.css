@@ -297,44 +297,6 @@ input,button,textarea,select{font-family:inherit;font-size:1rem}
 .guarantee strong{display:block;font-size:.92rem}
 .guarantee p{color:var(--muted);font-size:.8rem}
 
-/* ===================== FORMULÁRIO (modal) ===================== */
-.form{width:100%;text-align:left}
-.field{margin-bottom:.85rem}
-.field input{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--line);
-  border-radius:10px;color:var(--white);font-family:inherit;font-size:1rem;padding:.9rem;
-  transition:border-color .15s,box-shadow .15s}
-.field input::placeholder{color:#818aa0}
-.field input:focus{outline:none;border-color:var(--red-bright);box-shadow:0 0 0 3px rgba(225,23,51,.22)}
-.field input.is-invalid{border-color:#ff5b5b;box-shadow:0 0 0 3px rgba(255,91,91,.18)}
-.error{display:block;color:#ff8a8a;font-size:.76rem;margin-top:.3rem;min-height:1em}
-.form .cta{margin-top:.4rem}
-.note{text-align:center;font-size:.74rem;color:var(--muted);margin-top:.8rem}
-.success{margin-top:1rem;padding:.85rem;background:rgba(22,195,74,.14);
-  border:1px solid var(--green);border-radius:10px;color:#c8f5d6;
-  font-weight:600;font-size:.88rem;text-align:center}
-
-/* ===================== MODAL ===================== */
-.modal{position:fixed;inset:0;z-index:400;display:flex;align-items:center;justify-content:center;padding:1.2rem}
-.modal[hidden]{display:none}
-.modal__overlay{position:absolute;inset:0;background:rgba(4,8,18,.84);backdrop-filter:blur(4px)}
-.modal__box{position:relative;z-index:1;width:100%;max-width:440px;max-height:92vh;overflow-y:auto;
-  background:var(--panel);backdrop-filter:blur(10px);
-  border:1px solid var(--line);border-top:4px solid var(--red);border-radius:16px;
-  padding:2rem 1.6rem 1.6rem;box-shadow:0 30px 80px rgba(0,0,0,.7);
-  animation:modal-in .22s cubic-bezier(.22,1,.36,1) both}
-@keyframes modal-in{from{opacity:0;transform:translateY(14px) scale(.98)}}
-.modal__close{position:absolute;top:.7rem;right:.9rem;background:none;border:none;
-  color:var(--muted);font-size:1.8rem;line-height:1;cursor:pointer;padding:.2rem;transition:color .15s}
-.modal__close:hover{color:var(--white)}
-.modal__title{font-family:"Bebas Neue",sans-serif;font-size:1.95rem;letter-spacing:.01em;
-  text-transform:uppercase;text-align:center;margin-bottom:.3rem}
-.modal__title .hl{color:var(--red-bright)}
-.modal__sub{text-align:center;color:var(--muted);font-size:.88rem;margin-bottom:1.3rem}
-.modal__price{display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap;
-  background:rgba(22,195,74,.1);border:1px solid rgba(22,195,74,.3);border-radius:10px;
-  padding:.6rem .8rem;margin-bottom:1.2rem;font-size:.82rem;color:var(--muted)}
-.modal__price strong{color:#fff;font-size:1rem}
-
 /* ===================== BARRA FIXA MOBILE ===================== */
 .buybar{position:fixed;left:0;right:0;bottom:0;z-index:300;display:none;
   align-items:center;gap:.9rem;padding:.7rem .9rem calc(.7rem + env(safe-area-inset-bottom));
@@ -452,11 +414,11 @@ input,button,textarea,select{font-family:inherit;font-size:1rem}
   .compare th,.compare td{padding:.9rem 1rem}
 
   /* modais: mesma calha, e a caixa cola no rodapé em telas curtas */
-  .modal,.xp{padding:1rem}
-  .modal__box,.xp__box{padding:1.75rem 1rem 1.2rem}
+  .xp{padding:1rem}
+  .xp__box{padding:1.75rem 1rem 1.2rem}
 
   /* alvos de toque — o X do modal tinha ~30px, abaixo do mínimo usável */
-  .modal__close,.xp__close{top:.25rem;right:.25rem;padding:0;
+  .xp__close{top:.25rem;right:.25rem;padding:0;
     width:44px;height:44px;min-width:44px;min-height:44px;
     display:grid;place-items:center}
   .buybar .cta{min-height:48px}
@@ -469,5 +431,4 @@ input,button,textarea,select{font-family:inherit;font-size:1rem}
   .cta::after,.hero__mock,.hero__glow,.topbar__dot{animation:none}
   .carousel{overflow-x:auto;-webkit-mask-image:none;mask-image:none}
   .carousel__track{animation:none}
-  .modal__box{animation:none}
 }
