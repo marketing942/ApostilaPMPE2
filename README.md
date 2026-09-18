@@ -130,6 +130,6 @@ Verificado a 360px: 14 asserções, sem overflow horizontal.
 - [ ] Um lead de teste chegou na planilha **e** no Gerenciador de Anúncios
 - [ ] `document.querySelectorAll('[id="IPEyzyfmJhKQEYIXAlZH"]').length === 1` no console
 - [ ] Checkout abriu com nome, e-mail e telefone preenchidos
-- [ ] Preço conferido: R$ 59,90 · 12x R$ 6,12 (página, modal e barra fixa)
+- [ ] Preço conferido: R$ 59,90 · 12x R$ 6,25 (página, modal e barra fixa)
 - [ ] Popup de saída testado com `ExitPopup.show()` e um cadastro de teste na aba
 - [ ] Confirmado no preview do GTM que o cadastro do popup **não** dispara `Lead`
